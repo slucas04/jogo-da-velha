@@ -9,12 +9,12 @@ export default function Board({ xIsNext, squares, onPlay }){
 
     const copySquares = squares.slice();
     if(xIsNext){
-      copySquares[i] = 'X';
+      copySquares[i] = 'X ' + i;
     } else{
-      copySquares[i] = 'O';
+      copySquares[i] = 'O ' + i;
     }
     
-    onPlay(copySquares);
+    onPlay(copySquares, i);
   }
 
   const winner = calculateWinner(squares);
@@ -39,7 +39,8 @@ export default function Board({ xIsNext, squares, onPlay }){
         {Array.from({ length: 3 }).map((_, i) => (
           <div className="board-row" key={i}>
             {Array.from({ length: 3 }).map((_, j) => (
-              <Square key={i * 3 + j} value={squares[i * 3 + j]} index={i * 3 + j} onSquareClick={() => handleClick(i * 3 + j)} winner={winner} lineWinner={lineWinner} xIsNext={xIsNext}/>
+              <Square key={i * 3 + j} value={squares[i * 3 + j] ? (squares[i * 3 + j].startsWith("X") ? "X" : "O") : null}
+              index={i * 3 + j} onSquareClick={() => handleClick(i * 3 + j)} winner={winner} lineWinner={lineWinner} xIsNext={xIsNext}/>
             ))}
           </div>
         ))}
@@ -57,15 +58,20 @@ function calculateWinner(squares) {
       [0, 4, 8], [2, 4, 6]
   ];
 
+  const newSquares = squares.map((square) => {
+    return square ? (square.startsWith("X") ? "X" : "O") : null;
+  })
+
+
   for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
-      if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      if (newSquares[a] && newSquares[a] === newSquares[b] && newSquares[a] === newSquares[c]) {
         lineWinner = lines[i];  
         return true;
       }
   }
 
-  if (!squares.includes(null)) {
+  if (!newSquares.includes(null)) {
       return false;
   }
   return null;

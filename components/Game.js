@@ -3,24 +3,38 @@ import Board from './Board';
 
 export default function Game(){
     const [history, setHistory] = useState([Array(9).fill(null)]);
+    const [historyByOrder, setHistoryByOrder] = useState([Array(9).fill(null)]);
     const [currentMove, setCurrentMove] = useState(0);
     const currentSquares = history[currentMove];
     const xIsNext = currentMove % 2 === 0;
   
-    function handlePlay(nextSquares) {
+    function handlePlay(nextSquares, index) {
       const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];
+      const nextHistoryByOrder = [...historyByOrder.slice(0, currentMove + 1), nextSquares[index]];
+    
       setHistory(nextHistory);
+      setHistoryByOrder(nextHistoryByOrder);
       setCurrentMove(nextHistory.length - 1);
     }
+    
   
     function jumpTo(nextMove) {
       setCurrentMove(nextMove);
     }
   
-    const moves = history.map((squares, move) => {
+    const moves = historyByOrder.slice(0, currentMove).map((square, move) => {
       let description;
+      let row = parseInt((parseInt(square.slice(-1))/3));
+      let col;
+      if((parseInt(square.slice(-1))/3) - parseInt((parseInt(square.slice(-1))/3)) > 0.5){
+        col = 3;
+      } else if ((parseInt(square.slice(-1))/3) - parseInt((parseInt(square.slice(-1))/3)) < 0.5 && (parseInt(square.slice(-1))/3) - parseInt((parseInt(square.slice(-1))/3)) > 0.2){
+        col = 2;
+      } else {
+        col = 1;
+      }
       if (move > 0) {
-        description = 'Voltar para jogada nº' + move;
+        description = `Voltar para a jogada ${move} (linha ${row+1}, coluna ${col})`;
       } else {
         description = 'Voltar para o começo';
       }
