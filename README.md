@@ -1,6 +1,6 @@
 # Jogo da Velha ⭕❌
 
-Este projeto utiliza a tecnologia **React** e **Next.js** para componentizar e desenvolver uma página que funciona como um **Jogo da Velha** responsivo, funcional e com novas funções, como a de viagem no tempo! O jogo é baseado no **[Tutorial: Tic-Tac-Toe](https://react.dev/learn/tutorial-tic-tac-toe)**, fornecido pela documentação do React, mas implementado totalmente por mim e evoluído a um visual, componentização e boas práticas melhores aplicados, assim como sugerido pelo próprio site que seja feito para a prática e estudo do framework.
+Este projeto utiliza as tecnologias **React** e **Next.js** para componentizar e desenvolver uma página que funciona como um **Jogo da Velha** responsivo, funcional e com novas funções, como a de viagem no tempo! O jogo é baseado no **[Tutorial: Tic-Tac-Toe](https://react.dev/learn/tutorial-tic-tac-toe)**, fornecido pela documentação do React, mas implementado totalmente por mim e evoluído a um visual, componentização e boas práticas melhores aplicados, assim como sugerido pelo próprio site que seja feito para a prática e estudo do framework.
 
 ---
 
