@@ -16,7 +16,7 @@ const Footer = () => {
             <img src='/img/logo.png' alt="Logo" />
           </a>
           <p style={{ color: "white", marginTop: "1rem" }}>
-            © 2024 Samuel Lucas
+            © 2025 Samuel Lucas
           </p>
         </div>
   
