@@ -16,14 +16,10 @@ Este projeto utiliza a tecnologia **React** e **Next.js** para componentizar e d
 ## ⬆️ Melhorias
 
 ### Antes - modelo sugerido pela documentação
-  <div align="center">
-    ![antes](https://github.com/user-attachments/assets/fe6e66c4-53ba-4238-8cc0-c057a73d555a)
-  </div>
+  ![antes](https://github.com/user-attachments/assets/fe6e66c4-53ba-4238-8cc0-c057a73d555a)
   
 ### Depois - página final após melhorias feitas usando Bootstrap, animações CSS e React states
-  <div align="center">
-    ![depois](https://github.com/user-attachments/assets/7eb85d03-58e6-40fb-992a-96f0bbc099f1)
-  </div>
+  ![depois](https://github.com/user-attachments/assets/7eb85d03-58e6-40fb-992a-96f0bbc099f1)
   
 ---
 
