@@ -39,4 +39,6 @@ Este projeto utiliza as tecnologias **React** e **Next.js** para componentizar e
 
 Esta interface foi desenvolvida com o intuito de estudar as funcionalidades do **React v19**, focando em **hooks**, **states**, **imutabilidade**, **re-renderização** e **componentização**. O tutorial na documentação do React serviu como uma base, mas todos os upgrades foram idealizados por mim, visando tornar o jogo funcional, amigável e divertido.
 
+[Teste o projeto aqui. 😊](https://jogo-da-velha-seven-weld.vercel.app/)
+
 Sinta-se à vontade para explorar o repositório, contribuir e deixar feedback! 
