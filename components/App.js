@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="d-flex flex-column min-vh-100">
       <nav className="navbar fixed-top navbar-dark">
-      <div className="container-fluid">
-      <a className="navbar-brand" href=""><strong>Jogo da Velha</strong></a>
+        <div className="container-fluid">
+          <a className="navbar-brand" href=""><strong>Jogo da Velha</strong></a>
           <img src='/img/logo.png' />
         </div>
       </nav>

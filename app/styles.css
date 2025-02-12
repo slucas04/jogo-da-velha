@@ -191,6 +191,11 @@
     animation: blink-indigo 1s infinite; /* Faz o texto piscar */
   }
 
+  @media (max-width: 768px) {
+    img {
+      display: none;
+    }
+  }
   
   
   
