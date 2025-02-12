@@ -161,34 +161,34 @@
 
   @keyframes blink-green {
     0% {
-      color: white; /* Cor original */
+      color: white;
     }
     50% {
-      color: green; /* Cor invisível */
+      color: green;
     }
     100% {
-      color: white; /* Retorna à cor original */
+      color: white;
     }
   }
   
   .blink-green {
-    animation: blink-green 1s infinite; /* Faz o texto piscar */
+    animation: blink-green 1s infinite;
   }
 
   @keyframes blink-indigo {
     0% {
-      color: white; /* Cor original */
+      color: white;
     }
     50% {
-      color: indigo; /* Cor invisível */
+      color: indigo;
     }
     100% {
-      color: white; /* Retorna à cor original */
+      color: white;
     }
   }
   
   .blink-indigo {
-    animation: blink-indigo 1s infinite; /* Faz o texto piscar */
+    animation: blink-indigo 1s infinite;
   }
 
   @media (max-width: 768px) {
